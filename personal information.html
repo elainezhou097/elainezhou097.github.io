@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+	<title>Personal Information</title>
+    <style>
+    	.btn{
+    		margin-right: 100px;
+    	}
+		body{
+		background-color: lightsalmon;
+        padding-top: 70px;
+	    }
+		
+	    nav{
+	    	font-size: 20px;
+	    }
+	     
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-light fixed-top justify-content-center ">
+    
+  <a class="navbar-brand text-dark " href="#"><strong><em>BEAUTY*</em></strong></a>
+
+ 
+</nav>
+        <div class="ps-5">
+		<h2 class="fw-bold text-light text-center">Consumer Information</h2>
+        
+
+        <br style="line-height: 1000px;">
+
+		<div class="container mt-3 w-50">
+			<form>
+				
+		    <label for="demo" class="h4 text-light ">Name</label>
+		    
+			<input type="text" class="form-control" placeholder="Firstname-Lastname" id="demo">
+			
+			<br style="line-height: 1000px;">
+			<label for="demo" class="h4 text-light ">Email</label>
+		    
+			<input type="text" class="form-control"  id="demo">
+
+		    <br style="line-height: 1000px;">
+			<label for="demo" class="h4 text-light ">Phone Number</label>
+		    
+			<input type="text" class="form-control" placeholder="(---)--- ----" id="demo">
+
+	    </form>
+		</div>
+
+		<br style="line-height: 1000px;">
+         
+         <hr>
+         
+          <div class="container my-3">
+        <div class="col-md-12 text-center">
+        	<p id="demo"></p>
+
+            <script>
+            function myFunction() {
+            var txt;
+            if (confirm("Press a button!")) {
+            txt = "You pressed OK!";
+            } else {
+            txt = "You pressed Cancel!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+            }
+            </script>
+
+
+        	<input class="btn btn-light col-sm-2" type="button" onclick="location.href='Book.html';" value="Back">
+        	<input class="btn btn-primary col-sm-2" type="button" onclick="location.href='Confirmation.html';myFuction()" value="Book">
+        	
+        	
+
+   
+           <!--<a href="Book.html" class="button">Back</a>
+            <a href="Confirmation.html" class="button">Booking</a>-->
+        </div> 
+    </div>
+
+		</div>
+
+</body>
+</html>
