@@ -51,15 +51,19 @@
   <div class=" container w-50">
 		<h2 class="fw-bold text-light text-center">Book an appointment</h2>
 
+    <p class="fw-bold text-primary">If you have any special or specific requirement, it is highly recommended that you call us ahead.(613-876-5432).And then, we will give you our best advice to help you finish the appointment. 
+    </p>
+    <p class="fw-bold text-primary">If you do not have an appointment before coming, you can get the fastest reply by calling us (613-876-5432) to know the minimum waiting time now.</p>
+
 		<br style="line-height: 1000px;">
 
-		<h4 class="text-light">Date</h4>
+		<h4 class="text-light">Date and Time</h4>
 
 		<div class="input-group date">
 
          <form>
         
-	    <input type="text" class="form-control" placeholder="yy/mm/dd" >
+	   <!-- <input type="text" class="form-control" placeholder="yy/mm/dd" >
 
 	    </form>
 
@@ -70,11 +74,16 @@
 
       
 		<h4 class="text-light">Time</h4>
-		<form>
+		<form>-->
         
-	    <input type="text" class="form-control" placeholder="--:--" >
+	    <!--<input type="text" class="form-control" placeholder="--:--" >-->
+      <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2022-06-9T19:30"
+       min="2022-06-07T00:00" max="2023-06-6T00:00">
+
 
 	    </form>
+    </div>
 
       
 		<h4 class="text-light">Service</h4>
